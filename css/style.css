@@ -1,0 +1,843 @@
+@import 'utilities.css';
+@import 'main.js';
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --pure: #FFFFFF;
+    --ternary: #898989;
+    --light: #F2F2F2;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    margin: 0%;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    /* -webkit-font-smotthing: antialiased; */
+
+}
+
+/* ---------------------header starts----------------------- */
+header {
+    background-image: url(../images/bgn.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    opacity: 0.9;
+    height: 800px;
+    width: 100%;
+}
+
+.navbar {
+    font-size: 0.3rem;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    background: rgb(5, 5, 5);
+    width: 100%;
+    z-index: 111;
+
+}
+
+header .navbar-brand {
+    color: var(--primary);
+    text-decoration: none;
+    padding-left: 8rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+header .nav-item:last-child {
+    padding-right: 10.5em;
+}
+
+header .nav-item {
+    padding: 0.9em;
+    /* position: sticky; */
+}
+
+header .nav-item a {
+    padding: 0.9em;
+    font-size: 0.7rem;
+    color: var(--pure);
+    text-transform: uppercase;
+}
+
+header .nav-item a:hover {
+    color: var(--primary);
+    text-decoration: none;
+    transform: translateY(-5px);
+    transition: all 0.3s;
+}
+
+.navbar-toggler {
+    transition: all 0.3s ease in out;
+}
+
+/* -------------------------navbar ends------------------------- */
+
+/* header .row .col-md-12 {
+    text-align: center;
+    padding: 18vmin 1vmin;
+    margin-top: 18vmin;
+
+} */
+header .intro {
+    padding-top: 240px;
+    text-align: center;
+}
+
+header .container .col-md-12 h2 {
+    padding: 0.3vmin;
+    letter-spacing: 4px;
+    color: var(--primary);
+}
+
+header .container .col-md-12 h1 {
+    font-size: 5em;
+    font-weight: bold;
+    /* padding: 0.1em 0em; */
+    padding: 4px 0 1px 0;
+    font-family: 'Monda', sans-serif;
+}
+
+header .container .col-md-12 h4 {
+    font-size: 1.5em;
+    color: var(--primary);
+}
+
+header .container .col-md-12 h4 span {
+    font-size: 1em;
+    color: var(--ternary);
+}
+
+header .container .col-md-12 button {
+    border-radius: 0px;
+    /* font-weight: bold; */
+    padding-top: 70px;
+    font-size: 0.8em;
+
+}
+
+
+header .container .col-md-12 .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px;
+}
+
+header .container .col-md-12 .icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 1.8rem;
+    color: var(--pure);
+    font-size: 30px;
+}
+
+header .container .col-md-12 .icon a:hover {
+    color: var(--primary);
+    text-decoration: none;
+    transform: translateY(-5px);
+    transition: all 0.3s;
+}
+
+/* -----------------------------------------header ends---------------------------- */
+/* -------------------------------------------about starts--------------------------- */
+.section-1 .row .col-md-6 .pray img {
+    width: 70%;
+    border-radius: 0.2em;
+    height: 420px;
+
+}
+
+.section-1 {
+    padding: 9rem 0;
+    width: 100%;
+}
+
+.section-1 .row .pray img {
+    box-shadow: 5px 10px 12px #b9b9b9;
+}
+
+.section-1 .panel h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.section-1 .panel h1 span {
+    color: var(--primary);
+}
+
+.section-1 .panel p {
+    color: var(--ternary);
+    font-family: 'lato', sans-serif;
+}
+
+/* -----------------------------------about ends----------------------------------- */
+/* --------------------------------------Info starts---------------------------- */
+#personal {
+    padding: 0 0 50px 0;
+    background-color: #f7f7f9;
+    width: 100%;
+}
+
+.section-header .section-title {
+    font-size: 32px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#personal table {
+    border-collapse: collapse;
+    width: 70%;
+    box-shadow: 5px 10px 18px #888888;
+    color: var(--ternary);
+}
+
+#personal table td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #ece9e9;
+}
+
+/* --------------------------------------Info ends----------------------------------- */
+/* ---------------------------------------education starts----------------------------- */
+.section-3 {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.section-3 .box {
+    background: var(--pure);
+    padding: 15px !important;
+    border-radius: 30px;
+    transition: 0.3s;
+    border: 0.5px solid var(--ternary);
+    text-align: center;
+    justify-content: space-between;
+    border-collapse: separate;
+}
+
+.section-3 .box h2 {
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: bold;
+    word-spacing: 4px;
+    color: black;
+    font-family: serif;
+    font-weight: 600;
+
+}
+
+.section-3 .box .clg {
+    color: var(--primary);
+}
+
+.section-3 .box p {
+    color: var(--ternary);
+}
+
+.section-3 .box:hover {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+
+}
+
+.section-header-2 .section-title-1 {
+    font-size: 32px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 0 30px 0;
+}
+
+.section-3 .box .ic {
+    color: var(--primary);
+}
+
+/* --------------------------------------education ends------------------------------- */
+/* ---------------------portfolio starts------------------------------------------- */
+.portfolio {
+    border-radius: 0;
+    padding: 3rem 0 2rem;
+    background-color: #f7f7f9;
+    widows: 100%;
+}
+
+.portfolio h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    /* text-transform: uppercase; */
+    padding-bottom: 1.2rem;
+    color: var(--dark);
+}
+
+.portfolio h5.heading {
+    color: var(--primary);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.portfolio .heading1 {
+    color: #838383;
+    font-size: 23px;
+    font-weight: solid bold;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.heading-underline {
+    width: 3rem;
+    height: .2rem;
+    background-color: var(--primary);
+    margin: 0 auto 2rem;
+}
+
+.card {
+    margin-top: 40px;
+    height: 360px;
+    width: 330px;
+    text-align: center;
+
+}
+
+.card img {
+    z-index: -0.2;
+}
+
+.card-title {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.card-body {
+    text-align: center;
+    margin-top: 0;
+}
+
+.card-body h2 {
+    font-size: 20px;
+    margin-top: 0;
+    font-family: 'Lato', sans-serif;
+    padding-top: 0;
+
+}
+
+.card-body p {
+    font-size: 12px;
+    color: var(--primary);
+    margin-top: 0;
+}
+
+/* 
+.box6 img {
+    max-width: 100%;
+    transition: transform .5s ease;
+} */
+
+.row.no-padding [class*=col-] {
+    padding: 0;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+
+/* .box6 {
+    overflow: hidden;
+} */
+
+/* ---------------------------------------------portfolio ends--------------------------- */
+
+/* ------------------------------------------skills starts------------------------------- */
+.section-4 {
+    /* background-color: #f7f7f9; */
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+}
+
+.headings h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primary);
+    padding: 90px 0 60px 0;
+}
+
+.names h1 {
+    color: #2e2e2e;
+    font-size: 0.9rem;
+}
+
+.section-4 .head {
+    font-size: 2.3rem;
+    font-weight: 640;
+    padding-left: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #2e2e2e;
+
+}
+
+.section-4 .btn {
+    background-color: #353535;
+    color: white;
+    /* padding: 0px 0; */
+
+}
+
+.section-4 .head1 {
+    font-size: 2.2rem;
+    font-weight: 640;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #2e2e2e;
+
+}
+
+.progress {
+    height: 0.8rem !important;
+}
+
+.section-4 .but {
+    padding-left: 180px;
+
+}
+
+.section-4 .btn:hover {
+    background: var(--dark);
+}
+
+/* ------------------------------------------skills ends----------------------------- */
+
+/* ---------------------------certi starts---------------  */
+.carousel-fade .carousel-item {
+    height: 80vh;
+    width: 100%;
+    transition-duration: .6s;
+
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+    opacity: 1;
+}
+
+.active.carousel-item-next,
+.active.carousel-item-prev {
+    opacity: 0;
+
+}
+
+.active.carousel-item-next,
+.active.carousel-item-prev,
+.carousel-item-next,
+.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    opacity: 1;
+    width: 15%;
+    height: 10%;
+    background-color: var(--primary);
+    border-radius: 50%;
+    top: calc(50% - 25px);
+}
+
+.carousel-control-prev {
+    left: 5%;
+}
+
+.carousel-control-next {
+    right: 5%;
+}
+
+.box-6 img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-6 {
+    width: 100%;
+    height: 120vh;
+    padding: 20px 38px;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #f7f7f9;
+}
+
+
+
+/* -----------------------------------------certi ends---------------------------------------- */
+
+/* ----------------------------------------interests starts-------------------------------- */
+.section-5 {
+    width: 100%;
+    height: auto;
+    /* margin: 70px 0; */
+    padding-top: 130px;
+    padding-bottom: 80px;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: #221f1f;
+
+}
+
+.section-5 .section-header-3 h5 {
+    color: var(--primary);
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.section-5 .section-header-3 h2 {
+    color: var(--pure);
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: cursive;
+}
+
+.section-5 .section-header-3 {
+    padding-bottom: 80px;
+}
+
+.section-5 .row h2 {
+    color: var(--pure);
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.section-5 .row p {
+    color: var(--ternary);
+}
+
+.section-5 .row i {
+    color: var(--primary);
+    padding-bottom: 15px;
+}
+
+.section-5 .row .box-2 {
+    height: 250px;
+    width: 300px;
+    text-align: center;
+}
+
+/* -----------------------------------------------interests ends----------------------------- */
+
+/* ------------------------------------------------contact-------------------------------- */
+.Contactme {
+    text-align: center;
+    background: #221f1f;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.contact {
+    padding: 0 0 0 150px;
+}
+
+
+.Contactme h4 {
+    color: var(--primary);
+}
+
+.Contactme p {
+    color: var(--pure);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form-button button {
+    border: 1px solid var(--primary);
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: var(--pure);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: var(--primary);
+    width: 750px;
+}
+
+.form-control {
+    background: transparent;
+    color: var(--ternary);
+    border: none;
+    margin-bottom: var(--ternary);
+    font-size: 0.8rem;
+
+}
+
+.form-control:hover {
+    background: transparent;
+}
+
+.head-c {
+    padding: 70px 0;
+}
+
+/* --------------------------------------contact ends----------------------------- */
+/* ---------------------------------------location starts--------------------------- */
+.location {
+    background: #221f1f;
+    padding: 80px 0 40px 0;
+}
+
+.location .icon-l {
+    color: var(--pure);
+}
+
+.location h5 {
+    color: var(--primary);
+    font-size: 1.3rem;
+    padding-top: 8px;
+}
+
+.location p {
+    color: var(--pure);
+    font-size: 1rem;
+}
+
+/* ------------------------------------------------location ends------------------------ */
+/* --------------------------------------------------footer starts------------------------- */
+#footer {
+    background: #221f1f;
+    padding: 30px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+#footer .copyright {
+    text-align: center;
+}
+
+#footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #ccc;
+}
+
+#footer .credits span {
+    color: var(--primary);
+}
+
+#footer .icon-f {
+    font-size: 30px;
+    display: inline-block;
+    /* background: #333; */
+    color: var(--pure);
+    line-height: 1.5;
+
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .row {
+    padding-bottom: 80px;
+}
+
+#footer .icon-f a {
+    color: var(--pure);
+    padding-left: 18px;
+    font-size: 40px;
+}
+
+#footer .icon-f a:hover {
+    color: var(--primary);
+}
+
+/* -----------------------------footer ends--------------------------------- */
+
+#myBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: var(--pure);
+    background: var(--primary);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* ------------------------------------media query--------------------------------- */
+@media (min-width:992px) {
+    body {
+        overflow-x: hidden;
+        padding-right: 0;
+        margin: 0%;
+        width: 100%;
+
+    }
+
+    html.inited body {
+        display: block;
+    }
+
+    header .navbar-item {
+        padding: 0.8rem;
+    }
+
+    header .navbar-brand {
+        padding-left: 0.6rem;
+    }
+
+    .card {
+        width: 320px;
+    }
+
+    .section-4 .btn {
+        text-align: center;
+    }
+
+    .section-4 .but {
+        padding-left: 120px;
+    }
+
+    .section-4 .btn:hover {
+        background: var(--dark);
+    }
+
+    .box-6 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-6 {
+        height: 110vh;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        top: calc(50% - 25px);
+
+
+    }
+}
+
+@media(min-width:768px) and(max-width:991px) {
+    body {
+        padding-right: 0;
+        margin: 0%;
+        width: 100%;
+    }
+
+    header {
+        background-image: url(../images/bgn.jpg);
+        background-size: 100% 100%;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    header .navbar-item {
+        padding: 0.4rem;
+    }
+
+    header .navbar-brand {
+        padding-left: 0.6rem;
+    }
+
+    .portfolio .box6 {
+        text-align: center;
+        padding-right: 200px;
+        margin-right: 200px;
+    }
+
+    .section-1 .row .col-md-6 .pray img {
+        width: 60%;
+        height: 350px;
+    }
+
+    .section-1 .panel p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media(min-width:575px) and (max-width:767px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .section-6 {
+        height: 900px;
+        text-align: center;
+    }
+
+    .section-6 h1 {
+        font-size: 2rem;
+    }
+
+    .box-6 {
+        padding-left: 30px;
+    }
+
+    .box-6 img {
+        height: 600px;
+        width: 450px;
+    }
+
+}
+
+@media(min-width:480px) and (max-width:574px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .section-6 {
+        height: 500px;
+    }
+}
+
+@media(max-width:479px) {
+    body {
+        overflow-x: hidden;
+    }
+}
