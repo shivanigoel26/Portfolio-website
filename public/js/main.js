@@ -18,4 +18,4 @@ function showDivs(n) {
 
 setInterval(() => {
     showDivs(slideIndex += 1);
-}, 3000);
+}, 10000);

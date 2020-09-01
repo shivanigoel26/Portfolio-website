@@ -592,7 +592,8 @@ tr:nth-child(even) {
 
 @media screen and (max-width:991px){
    .contact{ padding:0px;
-    min-width:100% !important;
+    min-width:90% !important;
+    margin-left: 10px;
 }
 }
 .Contactme h4 {
@@ -616,12 +617,12 @@ tr:nth-child(even) {
     line-height: 1.4;
     text-align: center;
     background: var(--primary);
-    width: 100%px;
+    width: 100%;
 }
 
 .form-control {
     background: transparent;
-    color: var(--ternary);
+    color: #fff;
     border: none;
     margin-bottom: var(--ternary);
     font-size: 0.8rem;
