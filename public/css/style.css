@@ -2,7 +2,7 @@
 
 html {
     scroll-behavior: smooth;
-   
+
 }
 
 :root {
@@ -16,15 +16,16 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
-    padding:0px;
+    padding: 0px;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     background-color: transparent;
 }
 
-::-webkit-scrollbar-thumb{
-    background:rgba(0,0,0,0.8);
-    width:10px;
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.8);
+    width: 10px;
 }
 
 /* ---------------------header starts----------------------- */
@@ -37,7 +38,7 @@ header {
 }
 
 .row {
-    margin:0px !important;
+    margin: 0px !important;
 }
 
 .navbar {
@@ -45,28 +46,29 @@ header {
     letter-spacing: .1rem;
     font-weight: 700;
     background: rgb(5, 5, 5);
-    position:fixed;
-    top:0px;
-    display:flex;
-    max-width:100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    max-width: 100%;
     z-index: 1000;
 
 }
- .navbar-brand {
+
+.navbar-brand {
     color: var(--primary);
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.3s ease;
-    max-width:10%;
+    max-width: 10%;
 }
 
 
- .nav-item {
+.nav-item {
     padding: 0.9em;
     /* position: sticky; */
 }
 
- .nav-item a {
+.nav-item a {
     padding: 0.9em;
     font-size: 0.7rem;
     color: var(--pure);
@@ -113,12 +115,13 @@ header .container .col-md-12 h1 {
 
 header .container .col-md-12 h4 {
     font-size: 1.5em;
-    color: var(--primary);
+    color: var(--pure);
+    font-family: 'Roboto slab', serif;
 }
 
 header .container .col-md-12 h4 span {
     font-size: 1em;
-    color: var(--ternary);
+    color: var(--primary);
 }
 
 header .container .col-md-12 button {
@@ -126,6 +129,7 @@ header .container .col-md-12 button {
     /* font-weight: bold; */
     padding-top: 70px;
     font-size: 0.8em;
+    border-color: var(--primary);
 
 }
 
@@ -145,7 +149,7 @@ header .container .col-md-12 .icon a {
     height: 50px;
     margin-right: 1.8rem;
     color: var(--pure);
-    font-size: 30px;
+    font-size: 40px;
 }
 
 header .container .col-md-12 .icon a:hover {
@@ -239,7 +243,7 @@ tr:nth-child(even) {
 
 }
 
-@media screen and (max-width:991px){
+@media screen and (max-width:991px) {
 
     /* body{
         width:100%;
@@ -343,14 +347,14 @@ tr:nth-child(even) {
 .card {
     margin-top: 40px;
     height: 360px;
-    width:100%;
+    width: 100%;
     text-align: center;
 
 }
 
 .card img {
     z-index: -0.2;
-    width:100% !important;
+    width: 100% !important;
 }
 
 .card-title {
@@ -454,11 +458,12 @@ tr:nth-child(even) {
     background: var(--dark);
 }
 
-@media screen and (max-width:991px){
-.offset-1 {
-    margin-left: 0px;
+@media screen and (max-width:991px) {
+    .offset-1 {
+        margin-left: 0px;
+    }
 }
-}
+
 /* ------------------------------------------skills ends----------------------------- */
 
 /* ---------------------------certi starts---------------  */
@@ -590,12 +595,14 @@ tr:nth-child(even) {
     padding: 0 0 0 150px;
 }
 
-@media screen and (max-width:991px){
-   .contact{ padding:0px;
-    min-width:90% !important;
-    margin-left: 10px;
+@media screen and (max-width:991px) {
+    .contact {
+        padding: 0px;
+        min-width: 90% !important;
+        margin-left: 10px;
+    }
 }
-}
+
 .Contactme h4 {
     color: var(--primary);
 }
@@ -740,11 +747,11 @@ tr:nth-child(even) {
         display: block;
     }
 
-     .navbar-item {
+    .navbar-item {
         padding: 0.8rem;
     }
 
-     .navbar-brand {
+    .navbar-brand {
         padding-left: 0.6rem;
     }
 
@@ -769,7 +776,7 @@ tr:nth-child(even) {
 
     .section-6 {
         height: 100%;
-        padding-bottom:50px;
+        padding-bottom: 50px;
     }
 
     .carousell-control-next-icon,
@@ -796,11 +803,11 @@ tr:nth-child(even) {
         width: 100%;
     }
 
-     .navbar-item {
+    .navbar-item {
         padding: 0.4rem;
     }
 
-     .navbar-brand {
+    .navbar-brand {
         padding-left: 0.6rem;
     }
 
@@ -822,9 +829,9 @@ tr:nth-child(even) {
 }
 
 @media(min-width:575px) and (max-width:767px) {
-   
 
-   
+
+
 
     .section-6 h1 {
         font-size: 2rem;
@@ -850,87 +857,143 @@ tr:nth-child(even) {
 }
 
 @media(max-width:479px) {
-}
 
 
-.carousell {
-    background-color: rgba(0,0,0,0.5);
-    padding:20px;
-    height:90vh;
-  }
-
-.carousell-box {
-    width:100%;
-    position: relative;
-    height:80vh;
-    margin:0px;
-}
-  .carousell-item img {
-      max-width: 90%;
-        height:100%;
-      margin:0px auto;
-      display: flex;
-      flex-direction: row;
-      background-color: #333;
-  }
-  
-  .carousell-caption{
-    padding:5px;
-    border-radius: 20px;
-    color:#333;
-  }
-  
-  .carousell-control-prev,.carousell-control-next{
-    color:#333;
-    width:40px;
-    height:100px;
-    top:40%;
-    z-index:10001;
-    opacity:0.7;
-    padding:10px;
-  }
-  .carousell-control-prev,.carousell-control-next{
-    opacity: 1;
-  }
-  
-  .slidechange {
-    position:relative;
-    transform: translateY(-700%);
-}
-
-
-  @media screen and (max-width:991px){
-
-    .section-6{
-        margin-top:50px;
-        z-index:1;
-        min-height:80vh;
-    }
     .carousell {
-        background-color: rgba(0,0,0,0.5);
-        padding:20px;
-        height:50vh;
-      }
-    
-    .carousell-box {
-        width:100%;
-        position: relative;
-        height:40vh;
-        margin:0px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        height: 90vh;
     }
-      .carousell-item img {
-          max-width: 90%;
-          margin:0px auto;
-          display: flex;
-          flex-direction: row;
-          background-color: #333;
-      }
-      .slidechange {
-        position:relative;
+
+    .carousell-box {
+        width: 100%;
+        position: relative;
+        height: 80vh;
+        margin: 0px;
+    }
+
+    .carousell-item img {
+        max-width: 90%;
+        height: 100%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: row;
+        background-color: #333;
+    }
+
+    .carousell-caption {
+        padding: 5px;
+        border-radius: 20px;
+        color: #333;
+    }
+
+    .carousell-control-prev,
+    .carousell-control-next {
+        color: #333;
+        width: 40px;
+        height: 100px;
+        top: 40%;
+        z-index: 10001;
+        opacity: 0.7;
+        padding: 10px;
+    }
+
+    .carousell-control-prev,
+    .carousell-control-next {
+        opacity: 1;
+    }
+
+    .slidechange {
+        position: relative;
+        transform: translateY(-700%);
+    }
+
+    header .intro {
+        padding-top: 45%;
+    }
+
+    header .container .col-md-12 h2 {
+        padding: 0.2vmin;
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+    }
+
+    header .container .col-md-12 h1 {
+        font-size: 3.4rem;
+        padding-left: 8px;
+    }
+
+    header .container .col-md-12 h4 {
+        font-size: 1.1rem;
+    }
+
+    header .container .col-md-12 .icon {
+        padding-top: 29%;
+    }
+
+    header .container .col-md-12 .icon a {
+        font-size: 24px;
+        margin-right: 0.6rem;
+    }
+
+    .section-1 .row .col-md-6 .pray img {
+        height: 380px;
+    }
+
+    .section-4 .but {
+        padding-left: 35px;
+    }
+
+    .section-4 .head {
+        padding-left: 35px;
+    }
+
+    .section-4 .head1 {
+        padding-left: 35px;
+    }
+
+    #footer .icon-f a {
+        font-size: 30px;
+        padding-left: 12px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:991px) {
+
+    .section-6 {
+        margin-top: 50px;
+        z-index: 1;
+        min-height: 80vh;
+    }
+
+    .carousell {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        height: 50vh;
+    }
+
+    .carousell-box {
+        width: 100%;
+        position: relative;
+        height: 40vh;
+        margin: 0px;
+    }
+
+    .carousell-item img {
+        max-width: 90%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: row;
+        background-color: #333;
+    }
+
+    .slidechange {
+        position: relative;
         transform: translateY(-350%);
     }
-  
-  }
 
-
-  
+}
