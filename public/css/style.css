@@ -737,7 +737,7 @@ tr:nth-child(even) {
 
 /* -----------------------------footer ends--------------------------------- */
 
-#btnScrollToTop {
+.gotop {
     /* display: none; */
     position: fixed;
     bottom: 20px;
@@ -974,10 +974,7 @@ tr:nth-child(even) {
         padding-left: 12px;
     }
 
-    header {
-        background-size: 100% 100%;
-        height: 100vh;
-    }
+
 
 
 
