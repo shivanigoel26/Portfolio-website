@@ -737,11 +737,11 @@ tr:nth-child(even) {
 
 /* -----------------------------footer ends--------------------------------- */
 
-.gotop {
+.gotop #btnScrollToTop {
     /* display: none; */
     position: fixed;
     bottom: 20px;
-    right: 40px;
+    right: 20px;
     z-index: 99;
     border: none;
     color: var(--pure);
@@ -751,7 +751,7 @@ tr:nth-child(even) {
 }
 
 /* ------------------------------------media query--------------------------------- */
-@media (min-width:992px) {
+/* @media (min-width:992px) {
     body {
         overflow-x: hidden;
         padding-right: 0;
@@ -871,7 +871,7 @@ tr:nth-child(even) {
     .section-6 {
         height: 100%;
     }
-}
+} */
 
 @media(max-width:479px) {
 
@@ -992,18 +992,20 @@ tr:nth-child(even) {
     .carousell {
         background-color: rgba(0, 0, 0, 0.5);
         padding: 20px;
-        height: 50vh !important;
+        height: 90vh;
     }
 
     .carousell-box {
         width: 100%;
         position: relative;
-        height: 40vh !important;
+        height: 40vh;
         margin: 0px;
     }
 
     .carousell-item img {
-        max-width: 70%;
+        /* max-width: 90%; */
+        width: 800px;
+        height: 600px;
         margin: 0px auto;
         display: flex;
         flex-direction: row;
