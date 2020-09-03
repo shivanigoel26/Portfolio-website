@@ -484,14 +484,14 @@ tr:nth-child(even) {
 /* ------------------------------------------skills ends----------------------------- */
 
 /* ---------------------------certi starts---------------  */
-.carousell-fade .carousell-item {
+/* .carousell-fade .carousell-item {
     height: 60vh;
     width: 100%;
     transition-duration: .6s;
 
-}
+} */
 
-.carousell-item-next,
+/* .carousell-item-next,
 .carousell-item-prev {
     opacity: 1;
 }
@@ -521,25 +521,51 @@ tr:nth-child(even) {
     top: calc(50% - 25px);
 }
 
-.carousell-control-prev {
-    left: 5%;
-}
+.carousell-control-prev */
 
-.carousell-control-next {
-    right: 5%;
-}
 
-.box-6 img {
+/* .section-6 {
     width: 100%;
-    height: 100%;
-}
-
-.section-6 {
-    width: 100%;
-    height: 80vh;
+    height: 110vh;
     margin-bottom: 0;
     text-align: center;
     background-color: #f7f7f9;
+} */
+
+.section-6 {
+    margin-top: 50px;
+    z-index: 1;
+    min-height: 100vh;
+    background-color: #f7f7f9;
+    margin-bottom: 0;
+}
+
+.carousell {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    height: 80vh;
+}
+
+.carousell-box {
+    width: 100%;
+    position: relative;
+    height: 40vh;
+    margin: 0px;
+}
+
+.carousell-item img {
+    /* max-width: 90%; */
+    width: 700px;
+    height: 500px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+}
+
+.slidechange {
+    position: relative;
+    transform: translateY(-350%);
 }
 
 
@@ -879,13 +905,13 @@ tr:nth-child(even) {
     .carousell {
         background-color: rgba(0, 0, 0, 0.5);
         padding: 20px;
-        height: 90vh;
+        height: 80vh;
     }
 
     .carousell-box {
         width: 100%;
         position: relative;
-        height: 80vh;
+        height: 70vh;
         margin: 0px;
     }
 
@@ -992,7 +1018,7 @@ tr:nth-child(even) {
     .carousell {
         background-color: rgba(0, 0, 0, 0.5);
         padding: 20px;
-        height: 90vh;
+        height: 60vh;
     }
 
     .carousell-box {
