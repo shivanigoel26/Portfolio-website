@@ -891,7 +891,7 @@ tr:nth-child(even) {
 
     .carousell-item img {
         max-width: 90%;
-        height: 100%;
+        max-height: 100%;
         margin: 0px auto;
         display: flex;
         flex-direction: row;
@@ -1003,8 +1003,8 @@ tr:nth-child(even) {
     }
 
     .carousell-item img {
-        /* max-width: 90%; */
-        width: 800px;
+        max-width: 90%;
+        width: 500px;
         height: 600px;
         margin: 0px auto;
         display: flex;
